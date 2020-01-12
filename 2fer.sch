@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -173,4 +173,80 @@ Wire Notes Line
 	8350 500  8350 2550
 Wire Notes Line
 	8350 2550 10500 2550
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E1A5333
+P 4050 2400
+F 0 "SW1" H 4050 2685 50  0000 C CNN
+F 1 "SW_Push" H 4050 2594 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4050 2600 50  0001 C CNN
+F 3 "~" H 4050 2600 50  0001 C CNN
+	1    4050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E1A5D53
+P 4800 2400
+F 0 "SW2" H 4800 2685 50  0000 C CNN
+F 1 "SW_Push" H 4800 2594 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4800 2600 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9950 1600
+Wire Wire Line
+	3550 2800 3850 2800
+Wire Wire Line
+	3850 2800 3850 2400
+Wire Wire Line
+	3850 2800 4600 2800
+Wire Wire Line
+	4600 2800 4600 2400
+Connection ~ 3850 2800
+Wire Wire Line
+	4250 2400 4400 2400
+Wire Wire Line
+	4400 2400 4400 1950
+Wire Wire Line
+	5000 2400 5150 2400
+Wire Wire Line
+	5150 2400 5150 1950
+Text Label 3550 2800 0    50   ~ 0
+F5
+Text Label 4400 1950 0    50   ~ 0
+F4
+Text Label 5150 1950 0    50   ~ 0
+F3
+Wire Wire Line
+	6350 1200 6200 1200
+Wire Wire Line
+	6200 1200 6200 1350
+$Comp
+L power:GND #PWR0101
+U 1 1 5E1ADCB3
+P 6200 1350
+F 0 "#PWR0101" H 6200 1100 50  0001 C CNN
+F 1 "GND" H 6205 1177 50  0000 C CNN
+F 2 "" H 6200 1350 50  0001 C CNN
+F 3 "" H 6200 1350 50  0001 C CNN
+	1    6200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1300 7000 1300
+Text Label 7000 1300 0    50   ~ 0
+EN
+$Comp
+L Switch:SW_SPDT SW4
+U 1 1 5E1AF2FE
+P 6550 1200
+F 0 "SW4" H 6550 1485 50  0000 C CNN
+F 1 "SW_SPDT" H 6550 1394 50  0000 C CNN
+F 2 "footprints:Switch-SPST_CSS-1210MC" H 6550 1200 50  0001 C CNN
+F 3 "~" H 6550 1200 50  0001 C CNN
+	1    6550 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
